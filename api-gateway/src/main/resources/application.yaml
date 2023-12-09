@@ -1,0 +1,29 @@
+server:
+  port: 9060
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+spring:
+  application:
+    name: api-gateway
+  config:
+    import: "optional:configserver:http://localhost:9088"
+  cloud:
+    gateway:
+      routes:
+        - id: merchant-service
+          uri: lb://merchant-service
+          predicates:
+            - Path=/merchant/**
+        - id: terminal-service
+          uri: lb://terminal-service
+          predicates:
+            - Path=/terminal/**
