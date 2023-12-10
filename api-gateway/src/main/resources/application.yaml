@@ -22,8 +22,8 @@ spring:
         - id: merchant-service
           uri: lb://merchant-service
           predicates:
-            - Path=/merchant/**
+            - Path=/api/v1/merchant/**
         - id: terminal-service
           uri: lb://terminal-service
           predicates:
-            - Path=/terminal/**
+            - Path=/api/v1/terminal/**

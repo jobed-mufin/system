@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/merchant/card")
+@RequestMapping("/api/v1/merchant/card")
 public class CardTransactionController {
     private static final Logger LOGGER
             = LoggerFactory.getLogger(CardTransactionController.class);

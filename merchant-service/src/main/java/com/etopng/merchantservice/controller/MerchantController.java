@@ -11,7 +11,7 @@ import com.etopng.merchantservice.repository.MerchantRepository;
 import java.util.List;
 
 @RestController
-@RequestMapping("/merchant")
+@RequestMapping("/api/v1/merchant")
 public class MerchantController {
     private static final Logger LOGGER
             = LoggerFactory.getLogger(MerchantController.class);

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/merchant/cnp")
+@RequestMapping("/api/v1/merchant/cnp")
 public class CNPController {
     private static  final Logger LOGGER = LoggerFactory.getLogger(CNPController.class);
 

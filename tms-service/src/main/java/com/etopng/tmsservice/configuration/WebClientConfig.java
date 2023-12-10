@@ -1,4 +1,4 @@
-package com.etopng.tmsservice.config;
+package com.etopng.tmsservice.configuration;
 
 import com.etopng.tmsservice.client.MerchantClient;
 import org.springframework.beans.factory.annotation.Autowired;
